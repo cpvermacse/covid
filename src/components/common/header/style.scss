@@ -1,0 +1,21 @@
+$green-nav: #0ba48f;
+
+ul li {
+  display: flex;
+  width: 150px;
+  justify-content: space-around;
+  align-items: center;
+}
+.right {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.MuiAppBar-colorPrimary {
+  background-color: $green-nav !important;
+}
