@@ -1,7 +1,7 @@
 import React from "react";
 // import logo from "./logo.svg";
 import "./App.scss";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { HashRouter, Switch, Route } from "react-router-dom";
 
 import Home from "./components/home/Home";
 import DeepDive from "./components/deep-dive/DeepDive";
@@ -14,7 +14,7 @@ import SideDrawer from "./components/common/header/SideDrawer";
 function App() {
   return (
     <Provider store={store}>
-      <BrowserRouter>
+      <HashRouter>
         <div className="App" style={{ height: "100%" }}>
           <Navbar />
           <SideDrawer />
@@ -25,7 +25,7 @@ function App() {
             <Route exact path="/state/:stateCode" component={StateDisplay} />
           </Switch>
         </div>
-      </BrowserRouter>
+      </HashRouter>
     </Provider>
   );
 }
